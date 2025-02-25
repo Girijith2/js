@@ -1,0 +1,30 @@
+<h1>just one game</h1>
+<input id="guessnum">
+<button onclick="giri()">check</button>
+<p id="doit">it's wrong/currect</p>
+<p id="score">score</p>
+<script>
+       var guessnum1 =document.getElementById("guessnum")
+       var doit1 =document.getElementById("doit")
+       var score=document.getElementById("score")
+       var random1=Math.floor(Math.random()*10)+1
+       var scoretotal=10
+
+       function giri()
+       {
+        var guessnum2=guessnum1.value
+        if (random1==guessnum1)
+       {
+        console.log("currect")
+        doit.textContent="currect"
+        alert("you won,,,")
+       }
+       else{
+        scoretotal=scoretotal-1
+        score.textContent="score:"+scoretotal
+        doit.textContent="wrong"
+       }
+
+       }
+
+</script>
